@@ -27,6 +27,14 @@ h1{
     top: 40%;
     left: 40%;
     color: rgb(248, 248, 248);
+    transition-delay: 1s;
+    transition: color 3s;
+
+
+}
+
+h1:hover{
+    color: rgb(228, 178, 13);
 }
 
 header {
@@ -38,10 +46,10 @@ header {
 }
 
 hr{
-    height: 1px;
+    height: 2px;
     background-color: grey;
     align-self: center;
-    width: 80%;
+    width: 72%;
     border: 0;
 }
 
@@ -54,6 +62,7 @@ section{
 
 section p{
     text-align: justify;
+    padding: 80px 0 15px 0;
 }
 
 img{
@@ -63,12 +72,19 @@ img{
 }
 
 #recipe-details{
-    height: 40px;
+    height: 50px;
     width: 30%;
 }
 #cooking-time{
-    height: 50px;
+    height: 60px;
     width: 25%;
+    
+    
+}
+
+cooking-time:hover{
+    animation-name: runningPicture;
+    animation-duration: 4s;
 }
 .white-bg{
     margin: -20px auto;
@@ -79,4 +95,27 @@ img{
 
 .ul{
     text-decoration: none;
+    padding-bottom: 60px;
+    list-style-type: none;
+}
+
+h3{
+    padding-top: 40px;
+    font-size: large;
+}
+
+ol{
+    padding-bottom: 60px;
+}
+
+@keyframes runningPicture{
+    0%{
+        left:0;
+    }
+    /* 20%{
+        left:-10px; top:-3px;
+    } */
+    100%{
+        left:300px; top:1px; 
+    }
 }
